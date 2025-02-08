@@ -51,7 +51,7 @@ class Card:
 
 
 class FrenchDeck:
-    ranks = [str(r) for r in range(2, 11)] + list("JQKA")
+    ranks = tuple(str(r) for r in range(2, 11)) + tuple("JQKA")
     suits = "spades diamonds clubs hearts".split()
 
     def __init__(self):
